@@ -1,0 +1,86 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column for smaller screens */
+    max-width: 800px;
+    margin: auto;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    max-width: 580px;
+    height: 750px;
+    border-radius: 5px;
+}
+
+.title-daftar {
+    max-width: 400px;
+    margin: auto;
+}
+.formulir {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+input[type="submit"] {
+    background-color: #0A6EBA;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+input.google {
+    background-color: #D6D6D6; /* Warna latar belakang Google */
+    color: black; /* Warna teks */
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+label.keterangan {
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .main {
+        max-width: 100%; /* Adjust the max-width for smaller screens */
+    }
+
+    .image {
+        display: none; /* Hide the image on screens with a width of 600px or less */
+    }
+
+    .formulir {
+        max-width: 100%; /* Adjust the max-width for smaller screens */
+    }
+}
