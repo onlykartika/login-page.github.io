@@ -87,3 +87,18 @@ input {
     font-size: 12px;
     color: #575757;
 }
+
+@media screen and (max-width: 750px) {
+    .content {
+        max-width: 100%;
+        padding: 50px 50px;
+        margin: auto; 
+    }
+    .image {
+        display: none; 
+    }
+
+    .formulir {
+        max-width: 100%; 
+    }
+}
